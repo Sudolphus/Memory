@@ -17,3 +17,11 @@ Grid.prototype.shuffle = function() {
     this.addCard(new Card(i));
   }
 };
+
+Grid.prototype.findCard = function(id) {
+  for (const card of this.cards) {
+    if (card.id === id) {
+      return card;
+    }
+  }
+};
