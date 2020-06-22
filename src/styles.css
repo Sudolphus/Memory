@@ -1,6 +1,5 @@
 .cardContainer {
   background-color: red;
-  position: absolute;
   top: 100px;
   bottom: 100px;
   left: 100px;
@@ -9,4 +8,8 @@
 
 #newGame {
   text-align: center;
+}
+
+.winner {
+  display: none;
 }

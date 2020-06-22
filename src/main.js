@@ -1,8 +1,9 @@
 import { Grid } from './grid';
+import './styles.css';
 let gameGrid = new Grid();
 
 function winner() {
-  
+  $("#winner").show();
 }
 
 function displayCard(card) {
@@ -38,7 +39,10 @@ function cardClick() {
 }
 
 function newGame() {
+  let gameGrid = new Grid();
   gameGrid.shuffle();
+  $(".cardContainer").text("This card is face down");
+  $("#winner").hide();
 }
 
 $(document).ready(function() {

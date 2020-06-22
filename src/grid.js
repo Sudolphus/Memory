@@ -14,9 +14,10 @@ Grid.prototype.addCard = function(card) {
 };
 
 Grid.prototype.shuffle = function() {
-  for (let i = 1; i <= 6; i++) {
-    this.addCard(new Card(i));
-    this.addCard(new Card(i));
+  const potentialValue = [2, 4, 5, 6, 3, 1, 2, 1, 3, 5, 6, 4];
+  for (let i = 0; i < potentialValue.length; i++) {
+    let newCard = new Card(potentialValue[i]);
+    this.addCard(newCard);
   }
 };
 
