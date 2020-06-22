@@ -7,7 +7,7 @@ export function Grid() {
 
 Grid.prototype.addCard = function(card) {
   card.ID = this.nextID;
-  this.nextID = 1;
+  this.nextID += 1;
   this.cards.push(card);
 };
 
@@ -20,7 +20,7 @@ Grid.prototype.shuffle = function() {
 
 Grid.prototype.findCard = function(id) {
   for (const card of this.cards) {
-    if (card.id === id) {
+    if (card.ID === id) {
       return card;
     }
   }
