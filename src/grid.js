@@ -3,6 +3,7 @@ import { Card } from './card.js';
 export function Grid() {
   this.cards = [];
   this.nextID = 1;
+  this.firstCard = 0;
 }
 
 Grid.prototype.addCard = function(card) {
