@@ -4,6 +4,7 @@ export function Grid() {
   this.cards = [];
   this.nextID = 1;
   this.firstCard = 0;
+  this.firstCardID = 0;
 }
 
 Grid.prototype.addCard = function(card) {
@@ -25,4 +26,21 @@ Grid.prototype.findCard = function(id) {
       return card;
     }
   }
+};
+
+Grid.prototype.setFirstCard = function(value, id) {
+  this.firstCard = value;
+  this.firstCardID = id;
+};
+
+Grid.prototype.resetFirstCard = function() {
+  this.firstCard = 0;
+  this.firstCardID = 0;
+};
+
+Grid.prototype.removeMatch = function(card) {
+  const firstID = this.firstCardID;
+  this.cards = this.cards.filter(function(element) {
+    return (element.ID != card.ID && element.ID != firstID);
+  });
 };
