@@ -2,11 +2,18 @@ import { Card } from './card.js';
 
 export function Grid() {
   this.cards = [];
-  this.nextID = 0;
+  this.nextID = 1;
 }
 
 Grid.prototype.addCard = function(card) {
   card.ID = this.nextID;
   this.nextID = 1;
   this.cards.push(card);
-}
+};
+
+Grid.prototype.shuffle = function() {
+  for (let i = 1; i <= 6; i++) {
+    this.addCard(new Card(i));
+    this.addCard(new Card(i));
+  }
+};

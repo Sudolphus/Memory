@@ -2,7 +2,7 @@
 
 #### _A Game of Memory, 06.22.20_
 
-#### By _**Micheal Hansen, John Nils Olsen & Kevin Davis**_
+#### By _**Micheal Hansen, JohnNils Olson & Kevin Davis**_
 
 ## Description
 
@@ -72,4 +72,4 @@ _Please reach out through my GitHub account._
 
 MIT License.
 
-Copyright (c) 2020 **_Micheal Hansen, John Nils Olsen, & Kevin Davis_**
+Copyright (c) 2020 **_Micheal Hansen, JohnNils Olson, & Kevin Davis_**
